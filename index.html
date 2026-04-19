@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <html>
+<script>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+function addToCart(name, price){
+  cart.push({name, price});
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert("Сагсанд нэмэгдлээ");
+}
+</script>
+
+
+
+
+
+  
 <head>
   <title>MSTORE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
